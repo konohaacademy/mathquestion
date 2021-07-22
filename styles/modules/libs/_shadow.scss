@@ -1,0 +1,14 @@
+// テキストの影
+.text-shadow {
+  text-shadow: 10px 10px 0 $mainDarkColor;
+}
+
+// イラストの影
+.image-shadow {
+  box-shadow: 30px 30px 0 $mainDarkColor;
+}
+
+// 透明部分があるイラストの影
+.trans-image-shadow {
+  filter: drop-shadow(20px 20px 0 $mainDarkColor);
+}

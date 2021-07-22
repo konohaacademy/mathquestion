@@ -1,0 +1,150 @@
+// トップ画像とフェードインアニメ
+// デフォルトでは右からフェードインするボタンがあったけど非表示にしている
+// <div class="animation-contents">
+// <p class="animation-subtitle">サブタイトル</p>
+
+// <!-- <button class="reload" type="button">
+//   <img
+//     src="https://pulpxstyle.com/wp-main/common/codepen/post25-codepen02.svg"
+//     alt=""
+//   />
+// </button> -->
+// <p class="animationtitle">メインタイトル</p>
+// </div>
+
+p.animation-subtitle {
+  position: absolute;
+  animation: 0.4s fadeinlogo 0.9s forwards;
+  opacity: 0;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+  display: inline;
+}
+p.animationtitle {
+  margin: 0 auto;
+  position: absolute;
+  animation: 0.3s fadeintext 1.6s linear forwards;
+  opacity: 0;
+  right: auto;
+  transform: translateX(-50%);
+}
+
+@media screen and (max-width: 480px) {
+  p.animation-subtitle {
+    top: 30px;
+    font-size: 22px;
+    font-weight: 600;
+  }
+  p.animationtitle {
+    right: 5px;
+    font-size: 27px;
+    font-weight: 700;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  p.animation-subtitle {
+    top: 30px;
+    font-size: 28px;
+    font-weight: 600;
+  }
+  p.animationtitle {
+    right: 15px;
+    font-size: 60px;
+    font-weight: 700;
+  }
+}
+@media screen and (min-width: 1024px) {
+  p.animation-subtitle {
+    top: 50px;
+    font-size: 50px;
+    font-weight: 600;
+  }
+  p.animationtitle {
+    right: 100px;
+    font-size: 80px;
+    font-weight: 700;
+  }
+}
+
+button {
+  position: absolute;
+  right: 30px;
+  animation: 0.4s fadeinbtn 1.6s forwards;
+  opacity: 0;
+}
+
+@keyframes fadeinlogo {
+  0% {
+    left: 20px;
+  }
+  100% {
+    left: 30px;
+    opacity: 1;
+  }
+}
+@keyframes fadeinbtn {
+  0% {
+    top: 20px;
+  }
+  100% {
+    top: 30px;
+    opacity: 1;
+  }
+}
+@keyframes fadeintext {
+  0% {
+    bottom: 20px;
+  }
+  100% {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+
+.animation-contents {
+  position: relative;
+  background: url(https://pulpxstyle.com/wp-main/common/codepen/post25-codepen01.jpg)
+    no-repeat center/cover;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+// .reload {
+//   padding: 0;
+//   width: 50px;
+//   height: 50px;
+//   background-color: #111;
+//   border: none;
+//   border-radius: 10px;
+//   cursor: pointer;
+//   appearance: none;
+// }
+
+// .reload img {
+//   display: block;
+//   margin-right: auto;
+//   margin-left: auto;
+//   max-width: 60%;
+//   height: auto;
+//   transition: all 0.5s;
+// }
+
+// .reload:hover img {
+//   transform: rotate(360deg);
+// }
+
+// @media screen and (max-width: 767px) {
+//   p.animationtitle {
+//     left: 50%;
+//     right: auto;
+//     transform: translateX(-50%);
+//     font-size: 90px;
+//   }
+// }
+
+// @media screen and (max-width: 567px) {
+//   p.animationtitle {
+//     font-size: 60px;
+//   }
+// }

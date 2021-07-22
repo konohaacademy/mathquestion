@@ -1,0 +1,9 @@
+// テキストにノートのような掛け線を引く
+
+.hanging {
+  padding-right: 1.5em;
+  padding-left: 1.5em;
+  line-height: 3em;
+  background-image: linear-gradient(transparent 0, transparent 97%, #ddd 100%);
+  background-size: 100% 3em;
+}

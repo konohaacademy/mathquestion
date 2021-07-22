@@ -1,0 +1,72 @@
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.btn,
+a.btn,
+button.btn {
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 1.5;
+  position: relative;
+  display: inline-block;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  color: #212529;
+  border-radius: 0.5rem;
+}
+
+a.btn-border {
+  margin-bottom: 12px;
+  padding: 10px;
+
+  -webkit-transition: all 0.3s;
+
+  transition: all 0.3s;
+
+  border: 2px solid #000;
+  background: -webkit-radial-gradient(#000 15%, rgba(0, 0, 0, 0) 16%),
+    -webkit-radial-gradient(#000 15%, rgba(0, 0, 0, 0) 16%), #fc0;
+  background: radial-gradient(#000 15%, rgba(0, 0, 0, 0) 16%),
+    radial-gradient(#000 15%, rgba(0, 0, 0, 0) 16%), #fc0;
+  background-position: 0 0, 6px 6px;
+  background-clip: border-box;
+  background-origin: padding-box;
+  background-size: 12px 12px;
+}
+
+a.btn-border span {
+  position: relative;
+
+  display: block;
+
+  padding: 1.25rem 2rem;
+
+  color: #000;
+  border: 2px solid #000;
+  border-radius: 0.5rem;
+  background: #fff;
+}
+
+a.btn-border:hover {
+  background-position: 0 0, 8px 8px;
+  background-size: 16px 16px;
+}

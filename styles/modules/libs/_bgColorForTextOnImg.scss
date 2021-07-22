@@ -1,0 +1,12 @@
+// イラストの上に乗せているテキストに背景をつける
+// 改行したときに2行目以降にも反映されるようにする仕様
+
+.bgfortextonimg {
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+  display: inline;
+  padding: 0.3em;
+  line-height: 2.5;
+  color: $lightBlack;
+  background-color: $mainLightColor;
+}

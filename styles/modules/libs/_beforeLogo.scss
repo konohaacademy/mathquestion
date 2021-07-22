@@ -1,0 +1,324 @@
+// テキストの前にアイコンを置く
+// 画像ごとに番号を振ったclassを割り当ててアイコンを区別する
+
+.before-icon1::before {
+  content: "";
+  display: inline-block;
+  width: 35px;
+  height: 30px;
+  background: url(../../../images/logo.png) no-repeat;
+  background-size: contain;
+  vertical-align: middle;
+}
+
+.before-icon2::before {
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 35px;
+  transform: translateX(-15px);
+  background: url(../../../images/seed.png) no-repeat;
+  background-size: contain;
+  vertical-align: middle;
+}
+
+.before-icon3::before {
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 35px;
+  transform: translateX(-15px);
+  background: url(../../../images/bud.png) no-repeat;
+  background-size: contain;
+  vertical-align: middle;
+}
+.before-icon4::before {
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 35px;
+  transform: translateX(-15px);
+  background: url(../../../images/flower.png) no-repeat;
+  background-size: contain;
+  vertical-align: middle;
+}
+.before-icon5::before {
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 35px;
+  transform: translateX(-15px);
+  background: url(../../../images/home.png) no-repeat;
+  background-size: contain;
+  vertical-align: middle;
+}
+.before-icon6::before {
+  content: "";
+  display: inline-block;
+  width: 25px;
+  height: 30px;
+  transform: translateX(-15px);
+  background: url(../../../images/question.png) no-repeat;
+  background-size: contain;
+  vertical-align: middle;
+}
+.before-icon7::before {
+  content: "";
+  display: inline-block;
+  width: 25px;
+  height: 30px;
+  transform: translateX(-15px);
+  background: url(../../../images/fee.png) no-repeat;
+  background-size: contain;
+  vertical-align: middle;
+}
+.before-icon8::before {
+  content: "";
+  display: inline-block;
+  width: 25px;
+  height: 30px;
+  transform: translateX(-15px);
+  background: url(../../../images/map.png) no-repeat;
+  background-size: contain;
+  vertical-align: middle;
+}
+.before-icon9::before {
+  content: "";
+  display: inline-block;
+  width: 25px;
+  height: 30px;
+  transform: translateX(-15px);
+  background: url(../../../images/school.png) no-repeat;
+  background-size: contain;
+  vertical-align: middle;
+}
+.before-icon10::before {
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 35px;
+  transform: translateX(-15px);
+  background: url(../../../images/free.png) no-repeat;
+  background-size: contain;
+  vertical-align: middle;
+}
+.before-icon11::before {
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 35px;
+  transform: translateX(-15px);
+  background: url(../../../images/movie.png) no-repeat;
+  background-size: contain;
+  vertical-align: middle;
+}
+.before-icon12::before {
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 35px;
+  transform: translateX(-15px);
+  background: url(../../../images/lisence.png) no-repeat;
+  background-size: contain;
+  vertical-align: middle;
+}
+.before-icon13::before {
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 35px;
+  transform: translateX(-15px);
+  background: url(../../../images/repeat.png) no-repeat;
+  background-size: contain;
+  vertical-align: middle;
+}
+.before-icon14::before {
+  content: "";
+  display: inline-block;
+  width: 25px;
+  height: 30px;
+  transform: translateX(-15px);
+  background: url(../../../images/1on1.png) no-repeat;
+  background-size: contain;
+  vertical-align: middle;
+}
+.before-icon15::before {
+  content: "";
+  display: inline-block;
+  width: 25px;
+  height: 30px;
+  transform: translateX(-15px);
+  background: url(../../../images/shareddata.png) no-repeat;
+  background-size: contain;
+  vertical-align: middle;
+}
+.before-icon16::before {
+  content: "";
+  display: inline-block;
+  width: 25px;
+  height: 30px;
+  transform: translateX(-15px);
+  background: url(../../../images/glassman.png) no-repeat;
+  background-size: contain;
+  vertical-align: middle;
+}
+.before-icon17::before {
+  content: "";
+  display: inline-block;
+  width: 25px;
+  height: 30px;
+  transform: translateX(-15px);
+  background: url(../../../images/smartphone.png) no-repeat;
+  background-size: contain;
+  vertical-align: middle;
+}
+.before-icon18::before {
+  content: "";
+  display: inline-block;
+  width: 25px;
+  height: 30px;
+  transform: translateX(-15px);
+  background: url(../../../images/comment.png) no-repeat;
+  background-size: contain;
+  vertical-align: middle;
+}
+.before-icon19::before {
+  content: "";
+  display: inline-block;
+  width: 25px;
+  height: 30px;
+  transform: translateX(-15px);
+  background: url(../../../images/sheetblack.png) no-repeat;
+  background-size: contain;
+  vertical-align: middle;
+}
+.before-icon20::before {
+  content: "";
+  display: inline-block;
+  width: 25px;
+  height: 30px;
+  transform: translateX(-15px);
+  background: url(../../../images/graphs.png) no-repeat;
+  background-size: contain;
+  vertical-align: middle;
+}
+.before-icon21::before {
+  content: "";
+  display: inline-block;
+  width: 25px;
+  height: 30px;
+  transform: translateX(-15px);
+  background: url(../../../images/piledbooks.png) no-repeat;
+  background-size: contain;
+  vertical-align: middle;
+}
+.before-icon22::before {
+  content: "";
+  display: inline-block;
+  width: 25px;
+  height: 30px;
+  transform: translateX(-15px);
+  background: url(../../../images/tapphone.png) no-repeat;
+  background-size: contain;
+  vertical-align: middle;
+}
+.before-icon23::before {
+  content: "";
+  display: inline-block;
+  width: 25px;
+  height: 30px;
+  transform: translateX(-15px);
+  background: url(../../../images/security.png) no-repeat;
+  background-size: contain;
+  vertical-align: middle;
+}
+.before-icon24::before {
+  content: "";
+  display: inline-block;
+  width: 25px;
+  height: 30px;
+  transform: translateX(-15px);
+  background: url(../../../images/books.png) no-repeat;
+  background-size: contain;
+  vertical-align: middle;
+}
+.before-icon25::before {
+  content: "";
+  display: inline-block;
+  width: 25px;
+  height: 30px;
+  transform: translateX(-15px);
+  background: url(../../../images/cheerup.png) no-repeat;
+  background-size: contain;
+  vertical-align: middle;
+}
+.before-icon26::before {
+  content: "";
+  display: inline-block;
+  width: 25px;
+  height: 30px;
+  transform: translateX(-15px);
+  background: url(../../../images/questionsimple.png) no-repeat;
+  background-size: contain;
+  vertical-align: middle;
+}
+.before-icon27::before {
+  content: "";
+  display: inline-block;
+  width: 25px;
+  height: 30px;
+  transform: translateX(-15px);
+  background: url(../../../images/time.png) no-repeat;
+  background-size: contain;
+  vertical-align: middle;
+}
+.before-icon28::before {
+  content: "";
+  display: inline-block;
+  width: 25px;
+  height: 30px;
+  transform: translateX(-15px);
+  background: url(../../../images/share.png) no-repeat;
+  background-size: contain;
+  vertical-align: middle;
+}
+.before-icon29::before {
+  content: "";
+  display: inline-block;
+  width: 25px;
+  height: 30px;
+  transform: translateX(-15px);
+  background: url(../../../images/sheet.png) no-repeat;
+  background-size: contain;
+  vertical-align: middle;
+}
+.before-icon30::before {
+  content: "";
+  display: inline-block;
+  width: 25px;
+  height: 30px;
+  transform: translateX(-15px);
+  background: url(../../../images/book.png) no-repeat;
+  background-size: contain;
+  vertical-align: middle;
+}
+.before-icon31::before {
+  content: "";
+  display: inline-block;
+  width: 25px;
+  height: 30px;
+  transform: translateX(-15px);
+  background: url(../../../images/lesson.png) no-repeat;
+  background-size: contain;
+  vertical-align: middle;
+}
+.before-icon32::before {
+  content: "";
+  display: inline-block;
+  width: 25px;
+  height: 30px;
+  transform: translateX(-15px);
+  background: url(../../../images/pen.png) no-repeat;
+  background-size: contain;
+  vertical-align: middle;
+}

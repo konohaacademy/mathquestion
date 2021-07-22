@@ -1,0 +1,97 @@
+/******************************************************************
+
+Stylesheet: 960px以上のモニタで適用
+
+******************************************************************/
+
+.youtube {
+  width: 60%;
+}
+
+.head1 {
+  font-size: 35px;
+}
+
+.head2 {
+  font-size: 25px;
+}
+
+.head3 {
+  font-size: 25px;
+}
+
+p {
+  font-size: 17px;
+}
+
+.font-xs {
+  font-size: 14px;
+}
+.font-sm {
+  font-size: 16px;
+}
+.font-md {
+  font-size: 18px;
+}
+.font-lg {
+  font-size: 20px;
+}
+.font-xl {
+  font-size: 22px;
+}
+
+.cw-pc-90 {
+  width: 90%;
+  margin: 0 auto;
+  max-width: $contentMaxWidth;
+}
+.cw-pc-80 {
+  width: 80%;
+  margin: 0 auto;
+  max-width: $contentMaxWidth;
+}
+.cw-pc-70 {
+  width: 70%;
+  margin: 0 auto;
+  max-width: $contentMaxWidth;
+}
+.cw-pc-60 {
+  width: 60%;
+  margin: 0 auto;
+  max-width: $contentMaxWidth;
+}
+.cw-pc-50 {
+  width: 50%;
+  margin: 0 auto;
+  max-width: $contentMaxWidth;
+}
+.cw-pc-40 {
+  width: 40%;
+  margin: 0 auto;
+  max-width: $contentMaxWidth;
+}
+.cw-pc-30 {
+  width: 30%;
+  margin: 0 auto;
+  max-width: $contentMaxWidth;
+}
+.cw-pc-20 {
+  width: 20%;
+  margin: 0 auto;
+  max-width: $contentMaxWidth;
+}
+.cw-pc-10 {
+  width: 10%;
+  margin: 0 auto;
+  max-width: $contentMaxWidth;
+}
+
+.cw-pc-600px {
+  width: 600px;
+  margin: 0 auto;
+  max-width: $contentMaxWidth;
+}
+
+.pc-dis-none {
+  display: none;
+}

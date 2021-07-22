@@ -1,0 +1,100 @@
+// イラストとキャプションが交互に並ぶカード
+// テキストが多すぎると画像の幅を超えてしまうので2から3行までがいい
+// <div class="list-wrap">
+//             <div class="list-card">
+//               <div class="list-card-thumbnail">
+//                 <img
+//                   src="https://placehold.jp/48/eeeeee/212121/300x300.png?text=SAMPLE"
+//                   alt="SAMPLE"
+//                   class="list-card-img"
+//                 />
+//               </div>
+//               <p class="list-card-caption">
+//                 説明が入ります。説明が入ります。説明が入ります。
+//               </p>
+//             </div>
+//             <div class="list-card">
+//               <div class="list-card-thumbnail">
+//                 <img
+//                   src="https://placehold.jp/48/eeeeee/212121/300x300.png?text=SAMPLE"
+//                   alt="SAMPLE"
+//                   class="list-card-img"
+//                 />
+//               </div>
+//               <p class="list-card-caption">
+//                 説明が入ります。説明が入ります。説明が入ります。
+//               </p>
+//             </div>
+//             <div class="list-card">
+//               <div class="list-card-thumbnail">
+//                 <img
+//                   src="https://placehold.jp/48/eeeeee/212121/300x300.png?text=SAMPLE"
+//                   alt="SAMPLE"
+//                   class="list-card-img"
+//                 />
+//               </div>
+//               <p class="list-card-caption">
+//                 説明が入ります。説明が入ります。説明が入ります。
+//               </p>
+//             </div>
+//           </div>
+
+.list-card {
+  & {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 95%;
+    margin: 0 auto 32px;
+    &:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+  }
+  &-thumbnail {
+    width: 25%;
+  }
+  &-img {
+    height: 80px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+    max-width: 90px;
+  }
+  &-caption {
+    width: 65%;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .list-card {
+    &-thumbnail {
+      width: 20%;
+    }
+    &-caption {
+      width: 50%;
+      font-size: 18px;
+    }
+    &-img {
+      height: 110px;
+      max-width: 100px;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .list-card {
+    &-thumbnail {
+      width: 15%;
+    }
+    &-caption {
+      width: 60%;
+      font-size: 19px;
+    }
+    &-img {
+      height: 120px;
+      max-width: 110px;
+    }
+  }
+}

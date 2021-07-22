@@ -1,0 +1,44 @@
+// カーソルを置くと背景色が濃くなって字が少し浮き出るボタン
+// <div class="btn01">
+// <a href="">私たちについて</a>
+// </div>
+
+.btn01 a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 300px;
+  height: 60px;
+  color: $lightBlack;
+  background-color: $mainLightColor;
+  font-size: 18px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn01 a:hover {
+  color: $white;
+}
+
+.btn01 a::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: rotate(45deg) translateY(-50%);
+  width: 6px;
+  height: 6px;
+  border-width: 2px 2px 0 0;
+  border-style: solid;
+  border-color: $lightBlack;
+}
+
+.btn01 a:hover {
+  background-color: $mainDarkColor;
+}
+
+.btn01 a:hover::after {
+  border-color: $white $white transparent transparent;
+}

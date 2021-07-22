@@ -1,0 +1,280 @@
+// 料金表。背景画像も設定できる。シンプル
+
+// <div class="pricing-box-container">
+// <div class="pricing-box">
+//   <h5>Free</h5>
+//   <p class="price"><sup>$</sup>0<sub>/mo</sub></p>
+//   <ul class="features-list">
+//     <li><strong>1</strong> Project</li>
+//     <li><strong>5</strong> Team Members</li>
+//     <li><strong>50</strong> Personal Projects</li>
+//     <li><strong>5,000</strong> Messages</li>
+//   </ul>
+// </div>
+
+// <div class="pricing-box">
+//   <h5>Premium</h5>
+//   <p class="price"><sup>$</sup>39<sub>/mo</sub></p>
+//   <ul class="features-list">
+//     <li><strong>5</strong> Project</li>
+//     <li><strong>20</strong> Team Members</li>
+//     <li><strong>100</strong> Personal Projects</li>
+//     <li><strong>15,000</strong> Messages</li>
+//   </ul>
+// </div>
+
+// <div class="pricing-box">
+//   <h5>Platinum</h5>
+//   <p class="price"><sup>$</sup>89<sub>/mo</sub></p>
+//   <ul class="features-list">
+//     <li><strong>25</strong> Project</li>
+//     <li><strong>50</strong> Team Members</li>
+//     <li><strong>500</strong> Personal Projects</li>
+//     <li><strong>50,000</strong> Messages</li>
+//   </ul>
+// </div>
+// </div>
+
+.pricing-box-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.pricing-box {
+  background-color: #ffffff;
+  box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  text-align: center;
+  flex: 1;
+  padding: 0 30px 30px;
+  margin: 2% 10%;
+  min-width: 250px;
+  max-width: 350px;
+}
+
+.pricing-box h5 {
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+.price {
+  margin: 16px 0;
+  font-size: 36px;
+  font-weight: 900;
+}
+
+.price sub,
+.price sup {
+  font-size: 16px;
+  font-weight: 100;
+}
+
+.features-list {
+  padding: 0;
+  list-style-type: none;
+}
+
+.features-list li {
+  font-weight: 100;
+  padding: 12px 0;
+  font-weight: 100;
+}
+
+.features-list li:not(:last-of-type) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.pricing-box-bg-image {
+  background-image: url("https://images.unsplash.com/photo-1550029402-226115b7c579?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=701&q=80");
+  background-size: cover;
+  background-position: center center;
+  color: #ffffff;
+}
+
+.pricing-box-bg-image .features-list li {
+  border-bottom-color: rgba(255, 255, 255, 1);
+}
+
+// おしゃれバージョン
+
+// <div class="price-background">
+// <div class="price-container">
+//   <div class="panel pricing-table">
+
+//     <div class="pricing-plan">
+//       <img src="https://s22.postimg.cc/8mv5gn7w1/paper-plane.png" alt="" class="pricing-img">
+//       <h2 class="pricing-header">Personal</h2>
+//       <ul class="pricing-features">
+//         <li class="pricing-features-item">Custom domains</li>
+//         <li class="pricing-features-item">Sleeps after 30 mins of inactivity</li>
+//       </ul>
+//       <span class="pricing-price">Free</span>
+//       <a href="#/" class="pricing-button">Sign up</a>
+//     </div>
+
+//     <div class="pricing-plan">
+//       <img src="https://s28.postimg.cc/ju5bnc3x9/plane.png" alt="" class="pricing-img">
+//       <h2 class="pricing-header">Small team</h2>
+//       <ul class="pricing-features">
+//         <li class="pricing-features-item">Never sleeps</li>
+//         <li class="pricing-features-item">Multiple workers for more powerful apps</li>
+//       </ul>
+//       <span class="pricing-price">$150</span>
+//       <a href="#/" class="pricing-button is-featured">Free trial</a>
+//     </div>
+
+//     <div class="pricing-plan">
+//       <img src="https://s21.postimg.cc/tpm0cge4n/space-ship.png" alt="" class="pricing-img">
+//       <h2 class="pricing-header">Enterprise</h2>
+//       <ul class="pricing-features">
+//         <li class="pricing-features-item">Dedicated</li>
+//         <li class="pricing-features-item">Simple horizontal scalability</li>
+//       </ul>
+//       <span class="pricing-price">$400</span>
+//       <a href="#/" class="pricing-button">Free trial</a>
+//     </div>
+
+//   </div>
+// </div>
+// </div>
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.price-background {
+  position: relative;
+  width: 100%;
+}
+
+.price-background::after {
+  content: "";
+  background: $mainLightColor;
+  height: 350px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+@media (min-width: 900px) {
+  .background {
+    padding: 0 0 25px;
+  }
+}
+
+.price-container {
+  margin: 0 auto;
+  padding: 50px 0 0;
+  max-width: 960px;
+  width: 90%;
+}
+
+.panel {
+  background-color: #fff;
+  border-radius: 10px;
+  position: relative;
+  width: 100%;
+  z-index: 10;
+}
+
+.pricing-table {
+  box-shadow: 0px 10px 13px -6px rgba(0, 0, 0, 0.08),
+    0px 20px 31px 3px rgba(0, 0, 0, 0.09), 0px 8px 20px 7px rgba(0, 0, 0, 0.02);
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 900px) {
+  .pricing-table {
+    flex-direction: row;
+  }
+}
+
+.pricing-table * {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.pricing-plan {
+  border-bottom: 1px solid $mainDarkColor;
+  padding-top: 10px;
+}
+
+// .pricing-img {
+//   margin-bottom: 0px !important;
+// }
+
+.pricing-plan:last-child {
+  border-bottom: none;
+}
+
+@media (min-width: 900px) {
+  .pricing-plan {
+    border-bottom: none;
+    border-right: 1px solid $mainDarkColor;
+    flex-basis: 100%;
+  }
+
+  .pricing-plan:last-child {
+    border-right: none;
+  }
+}
+
+.pricing-img {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  max-width: 40%;
+  height: 130px;
+  object-fit: contain;
+}
+
+.pricing-header {
+  color: #777;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin: 12px;
+}
+
+.pricing-features {
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin: 10px 0 15px;
+  color: #777;
+}
+
+.pricing-features-item {
+  border-top: 1px solid $mainDarkColor;
+  font-size: 14px;
+  line-height: 1;
+  padding: 15px 0;
+  list-style: none;
+  width: 90%;
+}
+
+.pricing-features-item:last-child {
+  border-bottom: 1px solid $mainDarkColor;
+}
+
+.pricing-price {
+  color: $mainDarkColor;
+  display: block;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.pricing-button {
+  border: solid 1px $mainDarkColor;
+  border-radius: 10px;
+  color: $mainDarkColor;
+  display: inline-block;
+  margin: 15px 0px 20px;
+  padding: 15px 35px;
+  text-decoration: none;
+  transition: all 150ms ease-in-out;
+}

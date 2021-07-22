@@ -1,0 +1,296 @@
+/******************************************************************
+
+Stylesheet: ベーススタイル
+
+******************************************************************/
+
+// 基本のフォントを設定
+body {
+  font-family: "Kameron", "Noto Sans JP", sans-serif;
+  margin: 0px !important;
+}
+
+// スマホ用のデフォルトフォントサイズ。2pxごとに設定している
+.font-xs {
+  font-size: 12px;
+}
+.font-sm {
+  font-size: 14px;
+}
+.font-md {
+  font-size: 16px;
+}
+.font-lg {
+  font-size: 18px;
+}
+.font-xl {
+  font-size: 20px;
+}
+
+// デフォルトマージン
+.mb-0 {
+  margin-bottom: 0 !important;
+}
+.mb-sm {
+  margin-bottom: 20px !important;
+}
+.mb-lg {
+  margin-bottom: 40px !important;
+}
+.mb-xl {
+  margin-bottom: 60px !important;
+}
+.mt-sm {
+  margin-top: 20px !important;
+}
+.mt-lg {
+  margin-top: 40px !important;
+}
+.mt-xl {
+  margin-top: 60px !important;
+}
+
+// デフォルトパディング
+.p0 {
+  padding: 0 auto !important;
+}
+.p-sm {
+  padding: 5px !important;
+}
+.p-md {
+  padding: 10px !important;
+}
+.p-lg {
+  padding: 15px !important;
+}
+.pt-sm {
+  padding-top: 20px !important;
+}
+.pt-lg {
+  padding-top: 40px !important;
+}
+.pt-lg {
+  padding-top: 60px !important;
+}
+.pb-sm {
+  padding-bottom: 20px !important;
+}
+.pb-lg {
+  padding-bottom: 40px !important;
+}
+.pb-lg {
+  padding-bottom: 60px !important;
+}
+
+// ブロック要素の幅の指定10%～100%まで
+.cw-90 {
+  width: 90%;
+  margin: 0 auto;
+  max-width: $contentMaxWidth;
+}
+.cw-80 {
+  width: 80%;
+  margin: 0 auto;
+  max-width: $contentMaxWidth;
+}
+.cw-70 {
+  width: 70%;
+  margin: 0 auto;
+  max-width: $contentMaxWidth;
+}
+.cw-60 {
+  width: 60%;
+  margin: 0 auto;
+  max-width: $contentMaxWidth;
+}
+.cw-50 {
+  width: 50%;
+  margin: 0 auto;
+  max-width: $contentMaxWidth;
+}
+.cw-40 {
+  width: 40%;
+  margin: 0 auto;
+  max-width: $contentMaxWidth;
+}
+.cw-30 {
+  width: 30%;
+  margin: 0 auto;
+  max-width: $contentMaxWidth;
+}
+.cw-20 {
+  width: 20%;
+  margin: 0 auto;
+  max-width: $contentMaxWidth;
+}
+.cw-10 {
+  width: 10%;
+  margin: 0 auto;
+  max-width: $contentMaxWidth;
+}
+.cw-100px {
+  width: 100px;
+  margin: 0 auto;
+  max-width: $contentMaxWidth;
+}
+.cw-150px {
+  width: 150px;
+  margin: 0 auto;
+  max-width: $contentMaxWidth;
+}
+.cw-200px {
+  width: 200px;
+  margin: 0 auto;
+  max-width: $contentMaxWidth;
+}
+.cw-250px {
+  width: 250px;
+  margin: 0 auto;
+  max-width: $contentMaxWidth;
+}
+.cw-300px {
+  width: 300px;
+  margin: 0 auto;
+  max-width: $contentMaxWidth;
+}
+.ch-100px {
+  height: 100px;
+  margin: 0 auto;
+  max-width: $contentMaxWidth;
+}
+.ch-150px {
+  height: 150px;
+  margin: 0 auto;
+  max-width: $contentMaxWidth;
+}
+.ch-200px {
+  height: 200px;
+  margin: 0 auto;
+  max-width: $contentMaxWidth;
+}
+.ch-250px {
+  height: 250px;
+  margin: 0 auto;
+  max-width: $contentMaxWidth;
+}
+.ch-300px {
+  height: 300px;
+  margin: 0 auto;
+  max-width: $contentMaxWidth;
+}
+
+.lh15 {
+  line-height: 1.5em !important;
+}
+.lh20 {
+  line-height: 2em !important;
+}
+.lh25 {
+  line-height: 2.5em !important;
+}
+.lh30 {
+  line-height: 3em !important;
+}
+
+// ブロック要素中央寄せ
+.center {
+  text-align: center;
+}
+
+// フォント太く
+.fw-bold {
+  font-weight: 600;
+}
+
+// フレックスボックスを使いたいとき
+.flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.head1 {
+  text-align: center;
+  font-size: 30px;
+}
+
+// 見出しh2 data-numberを変えると表示される数字も変わる
+// <h2 class="head2" data-number="01">数字と組み合わせたCSS見出し</h2>
+.head2 {
+  position: relative;
+  font-size: 18px;
+  text-align: center;
+  color: $lightBlack;
+}
+
+.head2::before {
+  content: attr(data-number);
+  display: block;
+  margin-bottom: 30px;
+  color: $mainDarkColor;
+  font-size: 20px;
+}
+
+.head2::after {
+  content: "";
+  position: absolute;
+  top: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1px;
+  height: 20px;
+  background-color: $mainDarkColor;
+}
+
+.head3 {
+  position: relative;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+.head3::before {
+  position: absolute;
+  bottom: -10px;
+  left: calc(50% - 30px);
+  width: 60px;
+  height: 5px;
+  content: "";
+  border-radius: 3px;
+  background: $mainDarkColor;
+}
+
+// youtubeの埋め込み動画のアスペクト比を16:9に保ちながら中央寄せ
+.youtube {
+  width: 85%;
+  aspect-ratio: 16 / 9;
+  margin: 0 auto;
+  text-align: center;
+}
+.youtube iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.inline {
+  display: inline-block;
+}
+
+.word-rap {
+  word-wrap: break-word;
+}
+
+.img {
+  display: block;
+  width: inherit;
+  margin: 0 auto;
+}
+
+.img-bright {
+  filter: brightness(120%);
+}

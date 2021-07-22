@@ -1,0 +1,12 @@
+// テキストを強調したいときに使う
+
+// ドット
+.emphasis-dot {
+  text-emphasis: circle $mainVividColor;
+  -webkit-text-emphasis: circle $mainVividColor;
+}
+
+// 蛍光ペン
+.emphasis-pen {
+  background: linear-gradient(transparent 70%, $mainVividColor 70%);
+}

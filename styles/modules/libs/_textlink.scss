@@ -1,0 +1,27 @@
+// ホバーでアンダーラインが左から右に引かれるテキストリンク
+//     <p class="textlink"><a href="">私たちについて</a></p>
+
+.textlink a {
+  position: relative;
+  color: $lightBlack;
+  text-decoration: none;
+  font-weight: 600;
+}
+.textlink a:hover {
+  color: $mainDarkColor;
+}
+
+.textlink a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: $mainLightColor;
+  transition: width 0.3s;
+}
+
+.textlink a:hover::after {
+  width: 100%;
+}

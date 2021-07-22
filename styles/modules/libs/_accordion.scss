@@ -1,0 +1,101 @@
+// クリックすると下に解答が出てくるQ＆A形式のアコーディオン
+// <details>
+// <summary>
+// よくある質問はdetailsタグで実装しています。ここをクリックすると回答文が表示されます。
+// </summary>
+
+// <div class="answer">
+// <p>
+//   summaryタグをクリックするとここが表示されます。JavaScriptは不要です。作業量がかなり減るので提案しやすいですね。
+// </p>
+// </div>
+// </details>
+
+summary {
+  list-style: none;
+  position: relative;
+  padding: 20px 70px 20px 30px;
+  cursor: pointer;
+  color: $lightBlack;
+
+  background-color: $mainLightColor;
+  transition: 0.3s;
+}
+
+@media not all and (min-width: 768px) {
+  summary {
+    padding: 20px 50px 20px 20px;
+  }
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+summary:hover,
+details[open] summary {
+  background-color: $mainDarkColor;
+  color: $white;
+}
+
+summary::after {
+  content: "+";
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  transform: translateY(-50%);
+  transition: transform 0.5s;
+  font-size: 30px;
+}
+
+details[open] summary::after {
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.answer {
+  padding: 20px 30px;
+  p {
+    margin: 0;
+  }
+}
+
+@media not all and (min-width: 768px) {
+  summary::after {
+    right: 20px;
+    font-size: 20px;
+  }
+
+  .answer {
+    padding: 10px 20px;
+  }
+}
+
+details[open] .answer {
+  animation: fadein 0.5s ease;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+details {
+  margin-bottom: 10px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 600px;
+}
+
+@media not all and (min-width: 640px) {
+  details {
+    width: 100%;
+  }
+}
+
+details:first-of-type {
+  margin-top: 30px;
+}
