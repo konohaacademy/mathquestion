@@ -1051,7 +1051,7 @@ button {
   height: 30px;
   -webkit-transform: translateX(-15px);
           transform: translateX(-15px);
-  background: url(../../../images/question.png) no-repeat;
+  background: url(../../../images/tree.png) no-repeat;
   background-size: contain;
   vertical-align: middle;
 }
